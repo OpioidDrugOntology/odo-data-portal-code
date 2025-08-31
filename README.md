@@ -11,13 +11,13 @@ It provides scripts, workflows, and environment specifications to reproduce anal
 ## 📂 Repository Structure
 
 odo-data-portal-code/
-├── scripts/           # Python/R scripts for analysis
-│   └── .gitkeep       # placeholder so folder shows up on GitHub
-├── notebooks/         # Jupyter or R notebooks
-│   └── .gitkeep
-├── data/              # small example datasets (real big ones = external link)
-│   └── .gitkeep
-├── environment.yml    # reproducible conda environment
-├── LICENSE            # MIT license file
-├── CITATION.cff       # citation metadata (links to Zenodo DOI later)
-└── README.md          # this documentation
+├── scripts/ # Python/R scripts for analysis
+│ └── .gitkeep # placeholder so folder shows up on GitHub
+├── notebooks/ # Jupyter or R notebooks
+│ └── .gitkeep
+├── data/ # small example datasets (real big ones = external link)
+│ └── .gitkeep
+├── environment.yml # reproducible conda environment
+├── LICENSE # MIT license file
+├── CITATION.cff # citation metadata (links to Zenodo DOI later)
+└── README.md # this documentation
