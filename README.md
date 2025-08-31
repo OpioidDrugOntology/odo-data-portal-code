@@ -1,2 +1,2 @@
-# odo-data-portal-code
+# ODO Data Portal Code
 Code repository for the Opioid Drug Ontology Data Portal, providing reproducible analysis workflows associated with publications
