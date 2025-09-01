@@ -1,0 +1,4 @@
+odo_id,S0,S1,S2,S3,S4,S5,error
+ODOCPD_0001,CC(=O)Oc1ccccc1C(=O)O,CC(=O)Oc1ccccc1C(=O)O,CC(=O)Oc1ccccc1C(=O)O,CC(=O)Oc1ccccc1C(=O)O,CC(=O)Oc1ccccc1C(=O)O,CC(=O)Oc1ccccc1C(=O)O,
+ODOCPD_0002,CN1CCC(CC1)C2=CC(=O)NC(=O)N2,CN1CCC(c2cc(=O)[nH]c(=O)[nH]2)CC1,CN1CCC(c2cc(=O)[nH]c(=O)[nH]2)CC1,CN1CCC(c2cc(=O)[nH]c(=O)[nH]2)CC1,CN1CCC(c2cc(=O)[nH]c(=O)[nH]2)CC1,CN1CCC(c2cc(=O)[nH]c(=O)[nH]2)CC1,
+ODOCPD_0003,CCN(CC)CCOC(=O)c1ccc2ccccc2c1,CCN(CC)CCOC(=O)c1ccc2ccccc2c1,CCN(CC)CCOC(=O)c1ccc2ccccc2c1,CCN(CC)CCOC(=O)c1ccc2ccccc2c1,CCN(CC)CCOC(=O)c1ccc2ccccc2c1,CCN(CC)CCOC(=O)c1ccc2ccccc2c1,

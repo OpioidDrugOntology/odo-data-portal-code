@@ -1,0 +1,9 @@
+name: odo-chem
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - rdkit
+  - pandas
+  - pyyaml
+
