@@ -91,21 +91,22 @@ data/example_descriptors.csv — computed molecular descriptors (InChI, InChIKey
 
 
 🔑 Highlights
+---
 ⚙️ Pipeline (S0→S5)
 
 S2: Removes counter-ions (e.g., .Cl) and retains the largest organic fragment
 
 S5: Clears isotope labels (e.g., [3H]) for clean standardization
 
-⚛️ Descriptor Generation
+⚛ Descriptor Generation
 
 Converts each standardized SMILES into InChI and InChIKey
 
 Computes molecular properties: Molecular Weight (MW) and Molecular Formula (MF)
 
 
-⚙️ Re-run Pipeline Locally
-```bash
+⚙ Re-run Pipeline Locally
+
 conda activate odo-chem
 python pipelines/AutoMID_pipeline_S1-S5.py \
   --in data/example_input.csv \
@@ -116,8 +117,8 @@ python pipelines/AutoMID_pipeline_S1-S5.py \
 After running the S1–S5 pipeline, you can compute simple molecular descriptors:
 
 
-⚛️ Run Descriptor Generation
-```bash
+⚛ Run Descriptor Generation
+
 conda activate odo-chem
 python pipelines/simple_descriptors.py \
   --in data/example_output.csv \
