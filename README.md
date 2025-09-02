@@ -1,4 +1,4 @@
-# ODO Data Portal Code
+# ODO Data Portal Code  
 
 This repository provides the reproducible **code and workflows** for the **Opioid Drug Ontology (ODO) Data Portal**.  
 It includes scripts, pipelines, and environment specifications to ensure analyses can be run locally by any user.
@@ -9,9 +9,9 @@ It includes scripts, pipelines, and environment specifications to ensure analyse
 
 ---
 
-## 🚀 Quickstart
+## 🚀 Quickstart  
 
-Run the demo pipeline and descriptor generation locally:
+Run the demo pipeline and descriptor generation locally:  
 
 ```bash
 # 1. Set up environment (once)
@@ -29,6 +29,7 @@ python pipelines/AutoMID_pipeline_S1-S5.py \
 python pipelines/simple_descriptors.py \
   --in data/example_output.csv \
   --out data/example_descriptors.csv
+
 
 ---
 
@@ -58,19 +59,20 @@ conda activate odo-chem
 ---
 ## 📂 Repository Structure
 
-```<pre>
+```
 odo-data-portal-code/
 ├── pipelines/
-│ ├── AutoMID_pipeline_S1–S5.py 📗 pipeline (S1–S5 standardization)
-│ └── simple_descriptors.py 📑 InChI, InChIKey, MW, MF
+│   ├── AutoMID_pipeline_S1-S5.py   # ⚙️ main standardization pipeline
+│   └── simple_descriptors.py       # ⚛️ descriptor generation script
 ├── data/
-│ ├── example_input.csv ✏️ demo input (3 compounds)
-│ ├── example_output.csv 📊 S0→S5 transformations
-│ └── example_descriptors.csv 📈 computed descriptors
-├── environment.yml 🛠️ conda environment
-├── README.md 📖 quickstart & usage
-├── LICENSE 📜 MIT license
-└── CITATION.cff 📝 citation metadata
+│   ├── example_input.csv           # 📄 demo input (3 compounds)
+│   ├── example_output.csv          # 📊 pipeline output (S0→S5 results)
+│   └── example_descriptors.csv     # ⚛️ descriptor output (InChI, InChIKey, MW, MF)
+├── config/
+│   └── config.yaml                 # ⚙️ default settings for pipeline
+├── environment.yml                 # 🛠️ conda environment setup
+├── LICENSE                         # 📜 license file
+└── README.md                       # 📖 project documentation
 ```
 
 
@@ -78,17 +80,31 @@ odo-data-portal-code/
 
 
 ## 📊 Demo Data
+Workflow:
 
-- `data/example_input.csv` — 3 compounds (neutral, HCl salt, [3H]-labeled)  
-- `data/example_output.csv` — expected S0→S5 results  
-- `data/example_descriptors.csv` — simple descriptors (InChI, InChIKey, MW, MF) generated from `example_output.csv`  
+📄 example_input.csv → ⚙️ Pipeline (S0→S5) → 📊 example_output.csv → ⚛️ Descriptor Generation → example_descriptors.csv
 
-**Highlights**  
-- **S2:** removes counter-ions (e.g., `.Cl`) and keeps the largest organic fragment  
-- **S5:** clears isotope labels (e.g., `[3H]`)  
+data/example_input.csv — 3 compounds (neutral, HCl salt, [3H]-labeled)
 
-**Re-run locally (pipeline):**  
-```bash
+data/example_output.csv — standardized results after S0→S5 pipeline
+
+data/example_descriptors.csv — computed molecular descriptors (InChI, InChIKey, MW, MF) from example_output.csv
+
+🔑 Highlights
+
+Pipeline (S0→S5):
+
+S2: Removes counter-ions (e.g., .Cl) and retains the largest organic fragment
+
+S5: Clears isotope labels (e.g., [3H]) for clean standardization
+
+Descriptor Generation:
+
+Converts each standardized SMILES into InChI and InChIKey
+
+Computes basic molecular properties: molecular weight (MW) and molecular formula (MF)
+
+Re-run locally (pipeline):
 conda activate odo-chem
 python pipelines/AutoMID_pipeline_S1-S5.py \
   --in data/example_input.csv \
@@ -96,10 +112,19 @@ python pipelines/AutoMID_pipeline_S1-S5.py \
   --smiles-col smiles \
   --id-col odo_id
 
-
 ---
 
-## 🧪 Descriptor Generation
+## ⚛️ Descriptor Generation
+
+The pipelines/simple_descriptors.py script computes basic molecular descriptors from pipeline outputs:
+
+✅ InChI
+
+✅ InChIKey
+
+✅ Molecular Weight (MW)
+
+✅ Molecular Formula (MF)
 
 After running the S1–S5 pipeline, you can compute simple molecular descriptors:
 
@@ -115,3 +140,6 @@ python pipelines/simple_descriptors.py \
 
 - **Document metadata** (PMID, DOI, patent IDs) were retrieved directly from the [ChEMBL API](https://www.ebi.ac.uk/chembl/) (release 34).  
 
+- **Because these are simple API lookups, no custom code is required here — just cite the ChEMBL API as the source.
+
+- **All non-trivial processing code (pipeline, descriptors) is deposited in this repository for transparency.
