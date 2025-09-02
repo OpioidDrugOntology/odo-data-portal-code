@@ -81,32 +81,31 @@ odo-data-portal-code/
 
 ## 📊 Demo Data
 Workflow:
-
-📄 example_input.csv → ⚙️ Pipeline (S0→S5) → 📊 example_output.csv → ⚛️ Descriptor Generation → example_descriptors.csv
+📄 example_input.csv → ⚙️ Pipeline (S0→S5) → 📊 example_output.csv → ⚛️ Descriptor Generation → 📈 example_descriptors.csv
 
 data/example_input.csv — 3 compounds (neutral, HCl salt, [3H]-labeled)
 
 data/example_output.csv — standardized results after S0→S5 pipeline
 
-data/example_descriptors.csv — computed molecular descriptors (InChI, InChIKey, MW, MF) from example_output.csv
+data/example_descriptors.csv — computed molecular descriptors (InChI, InChIKey, MW, MF)
 
 
-
-## 🔑 Highlights
-
-Pipeline (S0→S5):
+🔑 Highlights
+⚙️ Pipeline (S0→S5)
 
 S2: Removes counter-ions (e.g., .Cl) and retains the largest organic fragment
 
 S5: Clears isotope labels (e.g., [3H]) for clean standardization
 
-Descriptor Generation:
+⚛️ Descriptor Generation
 
 Converts each standardized SMILES into InChI and InChIKey
 
-Computes basic molecular properties: molecular weight (MW) and molecular formula (MF)
+Computes molecular properties: Molecular Weight (MW) and Molecular Formula (MF)
 
-Re-run locally (pipeline):
+
+⚙️ Re-run Pipeline Locally
+```bash
 conda activate odo-chem
 python pipelines/AutoMID_pipeline_S1-S5.py \
   --in data/example_input.csv \
@@ -114,22 +113,10 @@ python pipelines/AutoMID_pipeline_S1-S5.py \
   --smiles-col smiles \
   --id-col odo_id
 
----
-
-## ⚛️ Descriptor Generation
-
-The pipelines/simple_descriptors.py script computes basic molecular descriptors from pipeline outputs:
-
-✅ InChI
-
-✅ InChIKey
-
-✅ Molecular Weight (MW)
-
-✅ Molecular Formula (MF)
-
 After running the S1–S5 pipeline, you can compute simple molecular descriptors:
 
+
+⚛️ Run Descriptor Generation
 ```bash
 conda activate odo-chem
 python pipelines/simple_descriptors.py \
