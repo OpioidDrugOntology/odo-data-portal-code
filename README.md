@@ -59,7 +59,7 @@ conda activate odo-chem
 
 ## 📂 Repository Structure
 
-```text
+```
 odo-data-portal-code/
 ├── pipelines/
 │ ├── AutoMID_pipeline_S1-S5.py 🧪 generalized CLI script (S1–S5 pipeline)
@@ -74,7 +74,7 @@ odo-data-portal-code/
 ├── LICENSE 📜 MIT license file
 └── CITATION.cff 📝 citation metadata (links to Zenodo DOI later)
 
-```text
+```
 
 ---
 
