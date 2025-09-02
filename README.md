@@ -58,7 +58,6 @@ conda activate odo-chem
 
 ---
 
-
 ## 📂 Repository Structure
 
 ```<pre>
@@ -67,7 +66,7 @@ odo-data-portal-code/
 │   ├── AutoMID_pipeline_S1-S5.py   # ⚙️ main standardization pipeline
 │   └── simple_descriptors.py       # ⚛️ descriptor generation script
 ├── data/
-│   ├── example_input.csv           # 📄 demo input (3 compounds)
+│   ├── example_input.csv           # ✏️ demo input (3 compounds)
 │   ├── example_output.csv          # 📊 pipeline output (S0→S5 results)
 │   └── example_descriptors.csv     # ⚛️ descriptor output (InChI, InChIKey, MW, MF)
 ├── config/
@@ -75,6 +74,7 @@ odo-data-portal-code/
 ├── environment.yml                 # 🛠️ conda environment setup
 ├── LICENSE                         # 📜 license file
 └── README.md                       # 📖 project documentation
+
 ```
 
 
