@@ -100,13 +100,12 @@ S2: Removes counter-ions (e.g., .Cl) and retains the largest organic fragment
 
 S5: Clears isotope labels (e.g., [3H]) for clean standardization
 
-⚛ Descriptor Generation
+⚛️ Descriptor Generation
 
 Converts each standardized SMILES into InChI and InChIKey
 
 Computes molecular properties: Molecular Weight (MW) and Molecular Formula (MF)
-
-
+---
 ⚙ Re-run Pipeline Locally
 
 conda activate odo-chem
