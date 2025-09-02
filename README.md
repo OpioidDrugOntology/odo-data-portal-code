@@ -90,6 +90,9 @@ data/example_output.csv — standardized results after S0→S5 pipeline
 
 data/example_descriptors.csv — computed molecular descriptors (InChI, InChIKey, MW, MF) from example_output.csv
 
+---
+
+
 ##🔑 Highlights
 
 Pipeline (S0→S5):
@@ -135,6 +138,7 @@ python pipelines/simple_descriptors.py \
   --out data/example_descriptors.csv
 
 ---
+
 
 ## 📑 Notes
 
