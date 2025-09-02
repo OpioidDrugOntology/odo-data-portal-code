@@ -72,7 +72,7 @@ odo-data-portal-code/
 ├── README.md                       📖  quickstart & usage
 ├── LICENSE                         📜  MIT license
 └── CITATION.cff                    📝  citation metadata
-```plaintext
+```
 
 
 ---
