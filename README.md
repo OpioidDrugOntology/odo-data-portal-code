@@ -70,3 +70,15 @@ python pipelines/AutoMID_pipeline_S1-S5.py \
   --smiles-col smiles \
   --id-col odo_id
 
+---
+
+## 🧪 Descriptor Generation
+
+After running the S1–S5 pipeline, you can compute simple molecular descriptors:
+
+```bash
+conda activate odo-chem
+python pipelines/simple_descriptors.py \
+  --in data/example_output.csv \
+  --out data/example_descriptors.csv
+
