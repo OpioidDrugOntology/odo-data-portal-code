@@ -9,6 +9,29 @@ It includes scripts, pipelines, and environment specifications to ensure analyse
 
 ---
 
+## 🚀 Quickstart
+
+Run the demo pipeline and descriptor generation locally:
+
+```bash
+# 1. Set up environment (once)
+conda env create -f environment.yml
+conda activate odo-chem
+
+# 2. Run pipeline (input → standardized output)
+python pipelines/AutoMID_pipeline_S1-S5.py \
+  --in data/example_input.csv \
+  --out data/example_output.csv \
+  --smiles-col smiles \
+  --id-col odo_id
+
+# 3. Run descriptor generation (output → InChI, InChIKey, MW, MF)
+python pipelines/simple_descriptors.py \
+  --in data/example_output.csv \
+  --out data/example_descriptors.csv
+
+---
+
 ## ⚙️ Requirements
 
 - [Conda (Miniconda/Anaconda)](https://docs.conda.io/en/latest/miniconda.html)  
