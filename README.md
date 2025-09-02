@@ -59,7 +59,7 @@ conda activate odo-chem
 ---
 ## 📂 Repository Structure
 
-```
+```<pre>
 odo-data-portal-code/
 ├── pipelines/
 │   ├── AutoMID_pipeline_S1-S5.py   # ⚙️ main standardization pipeline
