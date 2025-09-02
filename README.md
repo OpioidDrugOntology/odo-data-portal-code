@@ -59,22 +59,21 @@ conda activate odo-chem
 
 ## 📂 Repository Structure
 
-```
+<pre>
 odo-data-portal-code/
 ├── pipelines/
-│ ├── AutoMID_pipeline_S1-S5.py 🧪 generalized CLI script (S1–S5 pipeline)
-│ └── simple_descriptors.py 🧮 compute InChI, InChIKey, MW, MF from pipeline output
-├── environment.yml 🔧 reproducible conda environment (Python 3 + RDKit + pandas)
-├── README.md 📖 quickstart instructions & usage
-├── .gitignore 🚫 keep junk out of the repo
+│   ├── AutoMID_pipeline_S1-S5.py   ✏️  generalized CLI script (S1–S5 pipeline)
+│   └── simple_descriptors.py       🧾  compute InChI, InChIKey, MW, MF from pipeline output
+├── environment.yml                 🔧  reproducible conda environment (Python 3 + RDKit + pandas)
+├── README.md                       📖  quickstart instructions & usage
+├── .gitignore                      🚫  keep junk out of the repo
 ├── data/
-│ ├── example_input.csv ✏️ tiny demo input file (3 compounds: neutral, salt, isotope)
-│ ├── example_output.csv 📊 expected output (S0→S5 transformations)
-│ └── example_descriptors.csv 📈 computed molecular descriptors (InChI, InChIKey, MW, MF)
-├── LICENSE 📜 MIT license file
-└── CITATION.cff 📝 citation metadata (links to Zenodo DOI later)
-
-```
+│   ├── example_input.csv           ✏️  tiny demo input file (3 compounds: neutral, salt, isotope)
+│   └── example_output.csv          📊  expected output (S0→S5 transformations)
+├── example_descriptors.csv         📈  computed molecular descriptors (InChI, InChIKey, MW, MF)
+├── LICENSE                         📜  MIT license file
+└── CITATION.cff                    📝  citation metadata (links to Zenodo DOI later)
+</pre>
 
 ---
 
