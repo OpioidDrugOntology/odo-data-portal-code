@@ -84,3 +84,9 @@ python pipelines/simple_descriptors.py \
   --in data/example_output.csv \
   --out data/example_descriptors.csv
 
+---
+
+## 📑 Notes
+
+- **Document metadata** (PMID, DOI, patent IDs) were retrieved directly from the [ChEMBL API](https://www.ebi.ac.uk/chembl/) (release 34).  
+
