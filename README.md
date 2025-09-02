@@ -59,20 +59,19 @@ conda activate odo-chem
 
 ## 📂 Repository Structure
 
-```plaintext
+```none
 odo-data-portal-code/
 ├── pipelines/
-│   ├── AutoMID_pipeline_S1-S5.py   🧪  pipeline (S1–S5 standardization)
-│   └── simple_descriptors.py       🧾  InChI, InChIKey, MW, MF
+│   ├── AutoMID_pipeline_S1-S5.py   📗 pipeline (S1–S5 standardization)
+│   └── simple_descriptors.py       📑 InChI, InChIKey, MW, MF
 ├── data/
-│   ├── example_input.csv           ✏️  demo input (3 compounds)
-│   ├── example_output.csv          📊  S0→S5 transformations
-│   └── example_descriptors.csv     📈  computed descriptors
-├── environment.yml                 🔧  conda environment
-├── README.md                       📖  quickstart & usage
-├── LICENSE                         📜  MIT license
-└── CITATION.cff                    📝  citation metadata
-```
+│   ├── example_input.csv           ✏️ demo input (3 compounds)
+│   ├── example_output.csv          📊 S0→S5 transformations
+│   └── example_descriptors.csv     📈 computed descriptors
+├── environment.yml                 🛠️ conda environment
+├── README.md                       📖 quickstart & usage
+├── LICENSE                         📜 MIT license
+└── CITATION.cff                    📝 citation metadata
 
 
 ---
