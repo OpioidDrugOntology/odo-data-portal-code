@@ -56,12 +56,13 @@ odo-data-portal-code/
 
 - `data/example_input.csv` — 3 compounds (neutral, HCl salt, [3H]-labeled)  
 - `data/example_output.csv` — expected S0→S5 results  
+- `data/example_descriptors.csv` — simple descriptors (InChI, InChIKey, MW, MF) generated from `example_output.csv`  
 
 **Highlights**  
 - **S2:** removes counter-ions (e.g., `.Cl`) and keeps the largest organic fragment  
 - **S5:** clears isotope labels (e.g., `[3H]`)  
 
-**Re-run locally:**  
+**Re-run locally (pipeline):**  
 ```bash
 conda activate odo-chem
 python pipelines/AutoMID_pipeline_S1-S5.py \
@@ -69,6 +70,7 @@ python pipelines/AutoMID_pipeline_S1-S5.py \
   --out data/example_output.csv \
   --smiles-col smiles \
   --id-col odo_id
+
 
 ---
 
