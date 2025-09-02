@@ -49,3 +49,24 @@ odo-data-portal-code/
 ├── LICENSE 📜 MIT license file
 └── CITATION.cff 📝 citation metadata (links to Zenodo DOI later)
 ```
+
+---
+
+## 📊 Demo Data
+
+- `data/example_input.csv` — 3 compounds (neutral, HCl salt, [3H]-labeled)  
+- `data/example_output.csv` — expected S0→S5 results  
+
+**Highlights**  
+- **S2:** removes counter-ions (e.g., `.Cl`) and keeps the largest organic fragment  
+- **S5:** clears isotope labels (e.g., `[3H]`)  
+
+**Re-run locally:**  
+```bash
+conda activate odo-chem
+python pipelines/AutoMID_pipeline_S1-S5.py \
+  --in data/example_input.csv \
+  --out data/example_output.csv \
+  --smiles-col smiles \
+  --id-col odo_id
+
