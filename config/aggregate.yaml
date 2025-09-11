@@ -1,0 +1,15 @@
+key_columns:
+  - canonical_smiles
+  - molecular_weight
+  - endpoint
+  - endpoint_qualifier
+  - unit_of_measurement
+  - "chebi_ligand_ function_mode_ of_action_id"
+  - pro_protein_name
+  - chembl_target_organism
+  - odo_assay_id
+  - source
+value_column: chembl_p-value_concentration
+numeric_agg: median
+concat_sep: ","
+
