@@ -206,7 +206,7 @@ marimo/_static/
 marimo/_lsp/
 __marimo__/
 *.csv
-!data/*demo_input.csv
-!data/*demo_output.csv
+!data/aggregate_demo_input.csv
+!data/aggregate_demo_output.csv
 !data/example_input.csv
 !data/example_output.csv
