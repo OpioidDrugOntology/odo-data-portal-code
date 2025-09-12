@@ -1,4 +1,4 @@
-canonical_smiles,molecular_weight,endpoint,endpoint_qualifier,endpoint_value_nM,unit_of_measurement,chebi_ligand_ function_mode_ of_action_id,pro_protein_name,chembl_target_organism,odo_assay_id,source,chembl_p-value_concentration,doc_id,notes
+canonical_smiles,molecular_weight,endpoint,endpoint_qualifier,endpoint_value_nM,unit_of_measurement,chebi_ligand_function_mode_of_action_id,pro_protein_name,chembl_target_organism,odo_assay_id,source,chembl_p-value_concentration,doc_id,notes
 CC(=O)Oc1ccccc1C(=O)O,180.16,IC50,=,120.0,nM,MOD-123,Kappa opioid receptor,Homo sapiens,ASSAY_A,labA,120.0,PMID:1,replicate A1
 CC(=O)Oc1ccccc1C(=O)O,180.16,IC50,=,105.0,nM,MOD-123,Kappa opioid receptor,Homo sapiens,ASSAY_A,labA,105.0,PMID:2,replicate A2
 CC(=O)Oc1ccccc1C(=O)O,180.16,IC50,=,115.0,nM,MOD-123,Kappa opioid receptor,Homo sapiens,ASSAY_A,labA,115.0,PMID:3,replicate A3
