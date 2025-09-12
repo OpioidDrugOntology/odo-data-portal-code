@@ -119,7 +119,7 @@ Converts each standardized SMILES into InChI and InChIKey
 
 Computes molecular properties: Molecular Weight (MW) and Molecular Formula (MF)
 
-🧩 Aggregation
+🧩 Aggregation 
 
 Identifies redundant experimental rows across sources
 
@@ -127,9 +127,9 @@ Computes median endpoint values (endpoint_value_nM_median)
 
 Concatenates metadata (e.g., PMIDs, notes) into comma-separated lists for transparency
 
----
-⚙ Re-run Pipeline Locally
 
+⚙ Re-run Pipeline Locally
+---
 conda activate odo-chem
 python pipelines/AutoMID_pipeline_S1-S5.py \
   --in data/example_input.csv \
