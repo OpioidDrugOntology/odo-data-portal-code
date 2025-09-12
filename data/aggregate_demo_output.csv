@@ -1,15 +1,15 @@
-canonical_smiles,molecular_weight,endpoint,endpoint_qualifier,unit_of_measurement,chebi_ligand_ function_mode_ of_action_id,pro_protein_name,chembl_target_organism,odo_assay_id,source,chembl_p-value_concentration,doc_id,notes
-CC(=O)Oc1ccccc1C(=O)O,180.16,IC50,=,nM,MOD-123,Kappa opioid receptor,Homo sapiens,ASSAY_A,labA,115.0,"PMID:1,PMID:2,PMID:3","replicate A1,replicate A2,replicate A3"
-CC(=O)Oc1ccccc1C(=O)O,180.16,IC50,=,nM,MOD-123,Kappa opioid receptor,Homo sapiens,ASSAY_B,labA,118.0,PMID:7,assay id differs (unique)
-CC(=O)Oc1ccccc1C(=O)O,180.16,IC50,=,nM,MOD-123,Kappa opioid receptor,Mus musculus,ASSAY_A,labA,130.0,PMID:6,organism differs (unique)
-CC(=O)Oc1ccccc1C(=O)O,180.16,IC50,=,nM,MOD-123,Mu opioid receptor,Homo sapiens,ASSAY_A,labA,95.0,PMID:9,protein differs (unique)
-CC(=O)Oc1ccccc1C(=O)O,180.16,IC50,=,nM,MOD-124,Kappa opioid receptor,Homo sapiens,ASSAY_A,labA,122.0,PMID:8,mode_of_action id differs (unique)
-CC(=O)Oc1ccccc1C(=O)O,180.16,IC50,=,uM,MOD-123,Kappa opioid receptor,Homo sapiens,ASSAY_A,labA,0.12,PMID:5,unit differs (unique)
-CC(=O)Oc1ccccc1C(=O)O,180.16,IC50,>,nM,MOD-123,Kappa opioid receptor,Homo sapiens,ASSAY_A,labA,150.0,PMID:4,qualifier differs (unique)
-CCN(CC)CCOC(=O)c1ccc2ccccc2c1,327.42,IC50,=,nM,MOD-789,Delta opioid receptor,Homo sapiens,ASSAY_E,labM,57.0,"PMID:18,PMID:19,PMID:20","replicate C1,replicate C2,replicate C3"
-CN1CCC(CC1)C2=CC(=O)NC(=O)N2,222.25,IC50,=,nM,MOD-456,Mu opioid receptor,Homo sapiens,ASSAY_C,labX,40.0,PMID:17,endpoint differs (unique)
-CN1CCC(CC1)C2=CC(=O)NC(=O)N2,222.25,Ki,=,nM,MOD-456,Mu opioid receptor,Homo sapiens,ASSAY_C,labX,6.0,"PMID:10,PMID:11,PMID:12","replicate B1,replicate B2,replicate B3"
-CN1CCC(CC1)C2=CC(=O)NC(=O)N2,222.25,Ki,=,nM,MOD-456,Mu opioid receptor,Homo sapiens,ASSAY_D,labX,6.5,PMID:16,assay id differs (unique)
-CN1CCC(CC1)C2=CC(=O)NC(=O)N2,222.25,Ki,=,nM,MOD-456,Mu opioid receptor,Mus musculus,ASSAY_C,labX,9.0,PMID:15,organism differs (unique)
-CN1CCC(CC1)C2=CC(=O)NC(=O)N2,222.25,Ki,=,uM,MOD-456,Mu opioid receptor,Homo sapiens,ASSAY_C,labX,0.008,PMID:14,unit differs (unique)
-CN1CCC(CC1)C2=CC(=O)NC(=O)N2,222.25,Ki,>,nM,MOD-456,Mu opioid receptor,Homo sapiens,ASSAY_C,labX,8.0,PMID:13,qualifier differs (unique)
+canonical_smiles,molecular_weight,endpoint,endpoint_qualifier,endpoint_value_nM,endpoint_value_nM_median,unit_of_measurement,chebi_ligand_function_mode_of_action_id,pro_protein_name,chembl_target_organism,odo_assay_id,source,chembl_p-value_concentration,doc_id,notes
+CC(=O)Oc1ccccc1C(=O)O,180.16,IC50,=,"120.0,105.0,115.0",115.0,nM,MOD-123,Kappa opioid receptor,Homo sapiens,ASSAY_A,labA,"120.0,105.0,115.0","PMID:1,PMID:2,PMID:3","replicate A1,replicate A2,replicate A3"
+CC(=O)Oc1ccccc1C(=O)O,180.16,IC50,=,118.0,118.0,nM,MOD-123,Kappa opioid receptor,Homo sapiens,ASSAY_B,labA,118.0,PMID:7,assay id differs (unique)
+CC(=O)Oc1ccccc1C(=O)O,180.16,IC50,=,130.0,130.0,nM,MOD-123,Kappa opioid receptor,Mus musculus,ASSAY_A,labA,130.0,PMID:6,organism differs (unique)
+CC(=O)Oc1ccccc1C(=O)O,180.16,IC50,=,95.0,95.0,nM,MOD-123,Mu opioid receptor,Homo sapiens,ASSAY_A,labA,95.0,PMID:9,protein differs (unique)
+CC(=O)Oc1ccccc1C(=O)O,180.16,IC50,=,122.0,122.0,nM,MOD-124,Kappa opioid receptor,Homo sapiens,ASSAY_A,labA,122.0,PMID:8,mode_of_action id differs (unique)
+CC(=O)Oc1ccccc1C(=O)O,180.16,IC50,=,120.0,120.0,uM,MOD-123,Kappa opioid receptor,Homo sapiens,ASSAY_A,labA,0.12,PMID:5,unit differs (unique)
+CC(=O)Oc1ccccc1C(=O)O,180.16,IC50,>,150.0,150.0,nM,MOD-123,Kappa opioid receptor,Homo sapiens,ASSAY_A,labA,150.0,PMID:4,qualifier differs (unique)
+CCN(CC)CCOC(=O)c1ccc2ccccc2c1,327.42,IC50,=,"55.0,58.0,57.0",57.0,nM,MOD-789,Delta opioid receptor,Homo sapiens,ASSAY_E,labM,"55.0,58.0,57.0","PMID:18,PMID:19,PMID:20","replicate C1,replicate C2,replicate C3"
+CN1CCC(CC1)C2=CC(=O)NC(=O)N2,222.25,IC50,=,40.0,40.0,nM,MOD-456,Mu opioid receptor,Homo sapiens,ASSAY_C,labX,40.0,PMID:17,endpoint differs (unique)
+CN1CCC(CC1)C2=CC(=O)NC(=O)N2,222.25,Ki,=,"5.0,7.0,6.0",6.0,nM,MOD-456,Mu opioid receptor,Homo sapiens,ASSAY_C,labX,"5.0,7.0,6.0","PMID:10,PMID:11,PMID:12","replicate B1,replicate B2,replicate B3"
+CN1CCC(CC1)C2=CC(=O)NC(=O)N2,222.25,Ki,=,6.5,6.5,nM,MOD-456,Mu opioid receptor,Homo sapiens,ASSAY_D,labX,6.5,PMID:16,assay id differs (unique)
+CN1CCC(CC1)C2=CC(=O)NC(=O)N2,222.25,Ki,=,9.0,9.0,nM,MOD-456,Mu opioid receptor,Mus musculus,ASSAY_C,labX,9.0,PMID:15,organism differs (unique)
+CN1CCC(CC1)C2=CC(=O)NC(=O)N2,222.25,Ki,=,8.0,8.0,uM,MOD-456,Mu opioid receptor,Homo sapiens,ASSAY_C,labX,0.008,PMID:14,unit differs (unique)
+CN1CCC(CC1)C2=CC(=O)NC(=O)N2,222.25,Ki,>,8.0,8.0,nM,MOD-456,Mu opioid receptor,Homo sapiens,ASSAY_C,labX,8.0,PMID:13,qualifier differs (unique)
