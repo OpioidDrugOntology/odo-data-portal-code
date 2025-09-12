@@ -149,6 +149,7 @@ python pipelines/simple_descriptors.py \
 
 
 🧩 Run Aggregation Demo
+
 conda activate odo-chem
 python pipelines/aggregate_data.py \
   --in data/aggregate_demo_input.csv \
