@@ -210,3 +210,6 @@ __marimo__/
 !data/aggregate_demo_output.csv
 !data/example_input.csv
 !data/example_output.csv
+
+# macOS
+.DS_Store
