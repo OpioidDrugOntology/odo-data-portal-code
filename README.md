@@ -160,6 +160,7 @@ Compound records enriched with standardized chemical identifiers, external datab
 **Result**
 
 Median values for selected QikProp physicochemical descriptors (dipole, SASA, FISA, donorHB, accptHB, QPlogPw, QPlogPo/w, and QPlogS) calculated for each unique canonical SMILES.
+
 ---
 
 # Dependencies
