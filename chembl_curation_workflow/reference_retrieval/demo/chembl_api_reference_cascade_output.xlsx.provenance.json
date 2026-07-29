@@ -1,0 +1,34 @@
+{
+  "input_file": "chembl_doc_id_input.csv",
+  "output_file": "chembl_api_reference_cascade_output.xlsx",
+  "id_column": "chembl_document_id",
+  "precedence_order": [
+    "doi",
+    "pubmed_id",
+    "patent_id"
+  ],
+  "fields_retrieved": [
+    "doi",
+    "pubmed_id",
+    "patent_id",
+    "journal",
+    "year",
+    "title",
+    "doc_type"
+  ],
+  "input_rows": 9,
+  "output_rows": 9,
+  "rows_retained_unchanged": true,
+  "row_order_preserved": true,
+  "unique_document_ids": 8,
+  "mean_rows_per_document": 1.125,
+  "document_ids_with_no_record": 0,
+  "reference_type_counts": {
+    "doi": 6,
+    "patent_id": 3
+  },
+  "retrieval_timestamp_utc": "2026-07-28T19:48:50Z",
+  "chembl_status": {
+    "error": "Could not retrieve ChEMBL status: 'NewClient' object has no attribute 'status'"
+  }
+}
