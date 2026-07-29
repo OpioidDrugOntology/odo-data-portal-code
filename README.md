@@ -87,8 +87,7 @@ odo-data-portal-code/
 │   └── compound_annotation/
 │
 ├── general_data_processing_workflow/
-│   ├── qikprop_aggregation/
-│   └── final_schema_alignment/
+│   └── qikprop_aggregation/
 │
 ├── environment.yml
 ├── LICENSE
@@ -156,19 +155,11 @@ Compound records enriched with standardized chemical identifiers, external datab
 
 ## 4. General Data Processing Workflow
 
-General processing steps applied during construction of the final ODO-DP dataset.
-
-Components include:
-
 - Generation of median QikProp descriptor values
-- Final column ordering
-- Schema alignment
-- Additional dataset-level processing utilities
 
 **Result**
 
-Final processed datasets prepared for database import and public release.
-
+Median values for selected QikProp physicochemical descriptors (dipole, SASA, FISA, donorHB, accptHB, QPlogPw, QPlogPo/w, and QPlogS) calculated for each unique canonical SMILES.
 ---
 
 # Dependencies
