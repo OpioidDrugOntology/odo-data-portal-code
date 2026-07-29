@@ -38,9 +38,9 @@ table_extraction/
 ├── extract_table.py
 ├── README.md
 └── demo/
-    ├── demo_table_image.png
-    ├── demo_table_output.xlsx
-    └── demo_table_output.html
+    ├─data_table_image.png
+    ├─data_table_output.xlsx
+    └─data_table_output.html
 ```
 
 ---
