@@ -1,9 +1,8 @@
 # ODO Data Portal Code  
 
-Python workflows supporting the curation, annotation, and processing of datasets used to construct the **Opioid Drug Ontology Data Portal (ODO-DP)**.
+Python workflows supporting the curation, annotation, and processing of datasets used to construct the Opioid Drug Ontology Data Portal (ODO-DP).
 
-The repository contains the data curation and processing pipelines used to generate the ODO-DP dataset described in the accompanying publication. Workflows include manual curation from scientific literature, ChEMBL data retrieval and processing, compound annotation and molecular property generation from standardized chemical structures, and general dataset processing.
-
+The repository contains the data curation and processing workflows used to generate the ODO-DP dataset described in the accompanying publication. Workflows include manual curation from the scientific literature, ChEMBL data retrieval and processing, compound annotation from standardized chemical structures, and aggregation of QikProp physicochemical descriptors.
 
 ---
 
@@ -51,11 +50,6 @@ All required dependencies are installed automatically using the provided `enviro
 
 ## 📦 Installation
 
-Clone the repository and create the Conda environment.
-
-```bash
-Clone the repository and create the Conda environment.
-
 ```bash
 git clone https://github.com/<YOUR_USERNAME>/odo-data-portal-code.git
 cd odo-data-portal-code
@@ -86,8 +80,12 @@ odo-data-portal-code/
 ├── compound_processing_workflow/
 │   └── compound_annotation/
 │
-├── general_data_processing_workflow/
-│   └── qikprop_aggregation/
+├── qikprop_aggregation/
+│   ├── calculate_QikProp_median.py
+│   ├── demo/
+│   │   ├── Median_calculation_input.csv
+│   │   └── Median_calculation_output.xlsx
+│   └── README.md
 │
 ├── environment.yml
 ├── LICENSE
@@ -153,9 +151,9 @@ Compound records enriched with standardized chemical identifiers, external datab
 
 ---
 
-## 4. General Data Processing Workflow
+## 4. QikProp Aggregation Workflow
 
-- Generation of median QikProp descriptor values
+This workflow calculates representative median QikProp physicochemical descriptor values for compounds with multiple QikProp calculations. Descriptor values are grouped by canonical SMILES to generate one representative descriptor set per unique compound.
 
 **Result**
 
@@ -163,7 +161,7 @@ Median values for selected QikProp physicochemical descriptors (dipole, SASA, FI
 
 ---
 
-# Dependencies
+📚 Dependencies
 
 Major Python packages include:
 
@@ -185,7 +183,7 @@ conda env create -f environment.yml
 
 # 📊 Demonstration Data
 
-Each workflow includes representative demonstration datasets illustrating the expected input and output files for the associated scripts.
+Each workflow includes representative demonstration datasets illustrating the expected input and output files for the associated workflows.
 
 The demonstration datasets are intended solely to illustrate workflow execution and are not intended to reproduce the complete ODO-DP dataset.
 
