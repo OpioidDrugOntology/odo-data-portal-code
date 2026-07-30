@@ -90,26 +90,30 @@ The API key is not included with this repository and must be obtained separately
 odo-data-portal-code/
 │
 ├── manual_curation_workflow/
+│   ├── README.md
 │   ├── table_extraction/
 │   ├── assay_description_standardization/
 │   └── ascii_normalization/
 │
 ├── chembl_curation_workflow/
+│   ├── README.md
 │   ├── reference_retrieval/
 │   └── activity_aggregation/
 │
 ├── compound_processing_workflow/
+│   ├── README.md
 │   └── compound_annotation/
 │
-├── qikprop_aggregation/
-│   ├── calculate_QikProp_median.py
-│   ├── demo/
-│   │   ├── Median_calculation_input.csv
-│   │   └── Median_calculation_output.xlsx
-│   └── README.md
+├── qikprop_chemical_descriptor_aggregation/
+│   ├── README.md
+│   ├── calculate_qikprop_descriptor_medians.py
+│   └── demo/
+│       ├── Median_calculation_input.csv
+│       └── Median_calculation_output.xlsx
 │
 ├── environment.yml
 ├── LICENSE
+├── CITATION.cff
 └── README.md
 ```
 
