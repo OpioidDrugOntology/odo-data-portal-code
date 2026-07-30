@@ -1,0 +1,6 @@
+odo_id,smiles
+example_1,CC(=O)Oc1ccccc1C(=O)O
+example_2,O[C@@H]3[C@H]5[C@]24C1=C(O5)C(O)=CC=C1C[C@@H](N(C)CC4)[C@@]([H])2C=C3.Cl
+example_3,[3H]C(C(=O)N[C@@H](CCCNC(=N)N)C(=O)N[C@@H](Cc1ccc(O)cc1)C(=O)N[C@@H](Cc1ccc(O)cc1)C(=O)N[C@@H](CCCNC(=N)N)C(=O)N[C@H](C(=O)N[C@@H](CCCCN)C(N)=O)[C@@H](C)CC)C([3H])(C)C
+example_4,C[N+]1(CC2CC2)CC[C@]23c4c5ccc(O)c4O[C@H]2C(=O)CC[C@@]3(O)[C@H]1C5.[Br-]
+example_5,CC(C)[C@H]1CC[C@@H](N2CCC(n3cc(CCCN)c4ccccc43)CC2)CC1.Cl.Cl
