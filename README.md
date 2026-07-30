@@ -48,14 +48,14 @@ All required dependencies are installed automatically using the provided `enviro
 
 ---
 
-## Installation
+## 🛠️ Installation
 
 ```bash
 conda env create -f environment.yml
 conda activate odo-chem
 ```
 
-## API Requirements
+## 🔌 API Requirements
 
 Most workflows in this repository run entirely locally. However, the `manual_curation_workflow/assay_description_standardization` workflow uses the Anthropic Python SDK to access Claude models for generating standardized assay descriptions.
 
