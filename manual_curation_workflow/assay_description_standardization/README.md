@@ -39,7 +39,8 @@ Template-Based Standardization
 ──────────────────────────────────
           │
           ▼
-Standardized assay description```
+Standardized assay description
+```
 
 ---
 
@@ -93,6 +94,32 @@ Python 3.x
 
 Required Python packages are listed in the repository `environment.yml`.
 
+### Anthropic API
+
+This workflow uses Anthropic's Claude API, accessed through the Anthropic Python SDK, to generate standardized assay descriptions.
+
+Before running the workflow, obtain an Anthropic API key and configure it as an environment variable.
+
+**macOS / Linux**
+
+```bash
+export ANTHROPIC_API_KEY="your_api_key_here"
+```
+
+**Windows (Command Prompt)**
+
+```cmd
+set ANTHROPIC_API_KEY=your_api_key_here
+```
+
+**Windows (PowerShell)**
+
+```powershell
+$env:ANTHROPIC_API_KEY="your_api_key_here"
+```
+
+The API key is not included with this repository and must be obtained separately from Anthropic.
+
 ---
 
 ## Input
@@ -127,7 +154,7 @@ Each input assay receives one standardized description.
 
 ## Usage
 
-Run the workflow:
+After configuring the Anthropic API key, run the workflow:
 
 ```bash
 python assay_description_standardization.py
