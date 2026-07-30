@@ -94,8 +94,7 @@ odo-data-portal-code/
 │   ├── table_extraction/
 │   │   ├── README.md
 │   │   ├── ...
-│   │   ├── demo/
-│   │   └── ...
+│   │   └── demo/
 │   ├── assay_description_standardization/
 │   │   ├── README.md
 │   │   ├── ...
@@ -104,41 +103,27 @@ odo-data-portal-code/
 │   └── ascii_normalization/
 │       ├── README.md
 │       ├── ...
-│       ├── demo/
-│       └── ...
+│       └── demo/
 │
 ├── chembl_curation_workflow/
 │   ├── README.md
-│   ├── reference_retrieval/
-│   │   ├── README.md
-│   │   ├── ...
-│   │   ├── demo/
-│   │   └── ...
-│   └── activity_aggregation/
-│       ├── README.md
-│       ├── ...
-│       ├── demo/
-│       └── ...
+│   ├── ...
+│   └── demo/
 │
 ├── chemical_standardization_workflow/
 │   ├── README.md
 │   ├── ...
-│   ├── demo/
-│   └── ...
+│   └── demo/
 │
 ├── compound_processing_workflow/
 │   ├── README.md
-│   └── compound_annotation/
-│       ├── README.md
-│       ├── ...
-│       ├── demo/
-│       └── ...
+│   ├── ...
+│   └── demo/
 │
 ├── qikprop_chemical_descriptor_aggregation/
 │   ├── README.md
 │   ├── ...
-│   ├── demo/
-│   └── ...
+│   └── demo/
 │
 ├── environment.yml
 ├── LICENSE
