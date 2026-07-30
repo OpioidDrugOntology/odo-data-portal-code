@@ -42,12 +42,12 @@ demo/smiles_input_file.csv
 
 ## Output
 
-The workflow generates a CSV file containing the annotated compound information.
+The workflow generates an excel file containing the annotated compound information.
 
 Example output:
 
 ```text
-demo/compound_processing_output.csv
+demo/compound_processing_output.xlsx
 ```
 
 ---
@@ -67,9 +67,7 @@ compound_processing_workflow/
 ├── compound_annotation_pipeline.py
 └── demo/
     ├── smiles_input_file.csv
-    └── compound_processing_output.csv
-```
-
+    └── compound_processioutput.xlsxcsv
 ---
 
 ## Requirements
