@@ -48,20 +48,41 @@ All required dependencies are installed automatically using the provided `enviro
 
 ---
 
-## 📦 Installation
+## Installation
 
 ```bash
-git clone https://github.com/<YOUR_USERNAME>/odo-data-portal-code.git
-cd odo-data-portal-code
-
 conda env create -f environment.yml
 conda activate odo-chem
 ```
 
-The environment installs all Python packages required by the workflows contained in this repository.
+## API Requirements
+
+Most workflows in this repository run entirely locally. However, the `manual_curation_workflow/assay_description_standardization` workflow uses the Anthropic Python SDK to access Claude models for generating standardized assay descriptions.
+
+Before running this workflow, obtain an Anthropic API key and configure it as an environment variable.
+
+**macOS / Linux**
+
+```bash
+export ANTHROPIC_API_KEY="your_api_key_here"
 ```
 
+**Windows (Command Prompt)**
+
+```cmd
+set ANTHROPIC_API_KEY=your_api_key_here
+```
+
+**Windows (PowerShell)**
+
+```powershell
+$env:ANTHROPIC_API_KEY="your_api_key_here"
+```
+
+The API key is not included with this repository and must be obtained separately from Anthropic.
+
 ---
+
 
 ## 📂 Repository Structure
 

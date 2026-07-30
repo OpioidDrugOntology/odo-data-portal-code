@@ -1,9 +1,30 @@
 name: odo-chem
+
 channels:
   - conda-forge
-dependencies:
-  - python=3.10
-  - rdkit
-  - pandas
-  - pyyaml
 
+dependencies:
+  # Python
+  - python=3.10
+
+  # Cheminformatics
+  - rdkit
+
+  # Data processing
+  - pandas
+  - openpyxl
+
+  # Web/API access
+  - requests
+
+  # Utilities
+  - tqdm
+  - tenacity
+
+  # Package manager
+  - pip
+
+  # Python packages installed with pip
+  - pip:
+      - anthropic
+      - pubchempy
