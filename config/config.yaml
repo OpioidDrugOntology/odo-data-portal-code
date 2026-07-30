@@ -1,5 +1,0 @@
-# Default configuration for the AutoMID S1–S5 pipeline
-smiles_col: smiles
-id_col: odo_id
-stages: [S1, S2, S3, S4, S5]
-errors_only: false
