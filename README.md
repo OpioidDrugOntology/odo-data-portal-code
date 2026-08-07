@@ -125,6 +125,11 @@ odo-data-portal-code/
 │   ├── ...
 │   └── demo/
 │
+├── uniprot_id_retrieval/
+│   ├── README.md
+│   ├── ...
+│   └── demo/
+│
 ├── environment.yml
 ├── LICENSE
 ├── CITATION.cff
@@ -199,6 +204,16 @@ This workflow calculates representative median values for physicochemical descri
 **Result**
 
 Median values for selected QikProp physicochemical descriptors (dipole, SASA, FISA, donorHB, accptHB, QPlogPw, QPlogPo/w, and QPlogS) calculated for each unique canonical SMILES.
+
+---
+
+## 5. UniProt ID Retrieval
+
+This workflow retrieves UniProt identifiers for protein targets using protein names and corresponding taxonomy identifiers. Taxonomy information is used together with the protein name to support organism-specific target matching and assignment of the appropriate UniProt identifier.
+
+**Result**
+
+Protein target records annotated with corresponding UniProt identifiers for downstream integration into ODO-DP.
 
 ---
 
