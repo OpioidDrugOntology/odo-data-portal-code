@@ -68,8 +68,9 @@ activity_aggregation/
 │
 ├── README.md
 ├── aggregate_chembl.py
+├── requirements.txt
 └── demo/
-    ├── Activity_data_rows_input.csv
+    ├── activity_data_rows_input.csv
     └── aggregated_data_output.xlsx
 ```
 
